@@ -1,6 +1,9 @@
 package de.deloitte.commerce.aem.core.models;
 
 import com.google.gson.Gson;
+
+import de.deloitte.commerce.aem.core.pojo.CategoryAttributePOJO;
+
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -24,8 +27,11 @@ public class CIFCategoriesModel {
     private static final Logger LOG = LoggerFactory.getLogger(CIFCategoriesModel.class);
 
     private String categories;
+    
+    private CategoryAttributePOJO categoryAttr = new CategoryAttributePOJO();
 
-    @PostConstruct
+
+	@PostConstruct
     protected void init() {
         setCategories(this.categories);
     }
@@ -33,10 +39,15 @@ public class CIFCategoriesModel {
     public String getCategories() {
         return categories;
     }
+    
+    public CategoryAttributePOJO getCategoryAttr() {
+		return categoryAttr;
+	}
 
     public void setCategories(String categories) {
 
         Gson gson = new Gson();
+        
         CloseableHttpClient client = HttpClients.createDefault();
         try {
             try {
@@ -53,6 +64,8 @@ public class CIFCategoriesModel {
                 }
                 Map map = gson.fromJson(result.toString(),Map.class);
                 this.categories = result.toString();
+             this.categoryAttr =   gson.fromJson(this.categories, CategoryAttributePOJO.class);
+                
             } finally {
 
                 client.close();
