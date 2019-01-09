@@ -2,8 +2,10 @@ de/deloitte/commerce/aem/core/filters/LoggingFilter.class
 de/deloitte/commerce/aem/core/models/ProductModel.class
 de/deloitte/commerce/aem/core/schedulers/SimpleScheduledTask$Config.class
 de/deloitte/commerce/aem/core/listeners/SimpleResourceListener.class
+de/deloitte/commerce/aem/core/pojo/CategoryAttributePOJO.class
 de/deloitte/commerce/aem/core/models/HelloWorldModel.class
 de/deloitte/commerce/aem/core/models/CIFCategoriesModel.class
 de/deloitte/commerce/aem/core/package-info.class
 de/deloitte/commerce/aem/core/schedulers/SimpleScheduledTask.class
+de/deloitte/commerce/aem/core/pojo/CategoryName.class
 de/deloitte/commerce/aem/core/servlets/SimpleServlet.class

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1546085024620
-Build-Jdk: 1.8.0_151
-Built-By: harimehta
+Bnd-LastModified: 1547045053838
+Build-Jdk: 1.8.0_191
+Built-By: sbhadouria
 Bundle-Description: Bundles for Integration Tests for cifpoc
 Bundle-ManifestVersion: 2
 Bundle-Name: cifpoc - Integration Tests Bundles

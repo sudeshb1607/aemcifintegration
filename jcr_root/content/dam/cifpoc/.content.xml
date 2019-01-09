@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="cifpoc">
+        <folderThumbnail/>
+    </jcr:content>
+    <asset.jpg/>
+    <black_bl.gif/>
+    <black_br.gif/>
+    <black_tl.gif/>
+    <btn_header.gif/>
+    <black_tr.gif/>
+    <btn_footer.gif/>
+    <nav_left.gif/>
+    <nav_bg.gif/>
+    <pic_1.jpg/>
+    <nav_right.gif/>
+    <pic_2.jpg/>
+    <pic_3.jpg/>
+    <search.gif/>
+    <body_left.jpg/>
+    <body_left1.jpg/>
+    <header_bg.jpg/>
+    <header_left.jpg/>
+</jcr:root>
